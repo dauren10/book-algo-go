@@ -41,6 +41,10 @@ func (sl *SingleLinkedList[T]) pushTail(data T) error {
 	if sl.tail.nextPtr != nil {
 		return errors.New("it is not a tail")
 	}
+
+	if sl.tail == nil {
+
+	}
 	return nil
 }
 
